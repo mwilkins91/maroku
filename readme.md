@@ -34,3 +34,6 @@
     
     ## destroy container
     - docker rm #containerID
+
+NOTES:
+    -Pushing to Dokku may not delete docker container, but WILL delete the container from dokku. May be neccesary to manually kill the now out of date docker container.
