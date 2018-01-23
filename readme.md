@@ -23,3 +23,14 @@
 
     ## Destroy:
     - mongo:destroy myMongoServiceName
+
+
+# DOCKER
+    ## list all containers (dokku or otherwise)
+    - docker ps
+    
+    ## stop container
+    - docker stop $containerID
+    
+    ## destroy container
+    - docker rm #containerID
