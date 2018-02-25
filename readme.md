@@ -35,5 +35,10 @@
     ## destroy container
     - docker rm #containerID
 
+# Admin 
+    ## add ssh keys to dokku (so other people can deploy)
+    - dokku ssh-keys:add nameOfUserHere path/to/sshkey/here
+    - include admin in the name to give them admin powers
+    
 NOTES:
     -Pushing to Dokku may not delete docker container, but WILL delete the container from dokku. May be neccesary to manually kill the now out of date docker container.
